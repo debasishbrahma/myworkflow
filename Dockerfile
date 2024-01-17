@@ -1,10 +1,10 @@
 FROM node:20-slim
 
 #Work dir
-WORkDIR /myworkflow
+WORkDIR /app
 
 # Copy the application code into the container
-COPY . /demoapp
+COPY . /app
 
 # Install dependencies
 RUN npm ci
