@@ -6,7 +6,6 @@ WORkDIR /myworkflow
 # Copy the application code into the container
 COPY . /demoapp
 
-
 # Install dependencies
 RUN npm ci
 
