@@ -1,10 +1,10 @@
 FROM node:20-slim
 
 #Work dir
-WORkDIR /demo
+WORkDIR /myworkflow
 
 # Copy the application code into the container
-COPY . /demo
+COPY . /demoapp
 
 
 # Install dependencies
