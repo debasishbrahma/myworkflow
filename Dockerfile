@@ -1,10 +1,14 @@
-FROM node:20-alpine
+FROM node:20-slim
 
-# Install dependencies
-RUN npm install
+#Work dir
+WORkDIR /demo
 
 # Copy the application code into the container
-COPY . .
+COPY . /demo
+
+
+# Install dependencies
+RUN npm ci
 
 # Expose port 3000
 EXPOSE 3000
