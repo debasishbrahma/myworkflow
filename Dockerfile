@@ -4,7 +4,7 @@ FROM node:20-alpine
 RUN npm install
 
 # Copy the application code into the container
-COPY . demo/
+COPY . .
 
 # Expose port 3000
 EXPOSE 3000
