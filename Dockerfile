@@ -1,7 +1,7 @@
 FROM node:20-slim
 
 #Work dir
-WORkDIR /app
+WORKDIR /app
 
 # Copy the application code into the container
 COPY . /app
@@ -14,3 +14,4 @@ EXPOSE 3000
 
 # Start the application
 CMD ["npm", "start"]
+
